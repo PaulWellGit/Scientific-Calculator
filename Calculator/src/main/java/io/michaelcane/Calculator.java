@@ -3,7 +3,7 @@ package io.michaelcane;
 
 public class Calculator {
 
-    Commands commands = new Commands();
+//    Commands commands = new Commands(this);
 
     /**
      * Failed to go over methods that require their return to be degrees or radians.
@@ -161,10 +161,10 @@ public class Calculator {
         System.out.println("ERROR - You broke the universe");
     }
 
-    public void itsTimeForTheCalculator() {
-        commands.giveCommand(Commands.Command.COSINE);
-        commands.doTheThing();
-    }
+//    public void itsTimeForTheCalculator() {
+//        commands.giveCommand(Commands.Command.COSINE);
+//        commands.doTheThing();
+//    }
 
 
 

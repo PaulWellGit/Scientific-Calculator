@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
  */
 
 
-public class CalculatorSpec {
+public class CalculatorTest {
 
     Calculator calculator;
 

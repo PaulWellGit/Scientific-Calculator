@@ -6,7 +6,7 @@ import static java.lang.Double.parseDouble;
 
 public class User {
 
-    Commands commands = new Commands();
+//    Commands commands = new Commands();
     /**
      * This is the Memory that can be Set, Recalled, and Cleared.
      */
@@ -40,15 +40,15 @@ public class User {
 
     double isNumber = 0;
 
-    public void parser(String input) {
-        /**
-         * Parser that tells if user input is a String or a line that
-         * could be parsed into a double.
-         */
-        try {
-            isNumber = parseDouble(getInput());
-        } catch (NumberFormatException e) {
-            commands.doTheThing();
-        }
-    }
+//    public void parser(String input) {
+//        /**
+//         * Parser that tells if user input is a String or a line that
+//         * could be parsed into a double.
+//         */
+//        try {
+//            isNumber = parseDouble(getInput());
+//        } catch (NumberFormatException e) {
+//            commands.doTheThing();
+//        }
+//    }
 }
