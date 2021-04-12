@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn -f Calculator/pom.xml -B -DskipTests clean package'
+        sh 'mvn -f Calculator/pom.xml -B -DskipTests clean package checkstyle:checkstyle findbugs:findbugs pmd:pmd'
       }
     }
 
