@@ -1,29 +1,38 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3-alpine'
-      args '-v /root/.m2:/root/.m2'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
-        sh 'mvn -f Calculator/pom.xml -B -DskipTests clean package checkstyle:checkstyle findbugs:findbugs pmd:pmd'
+        echo 'Start Build'
+        sh 'mvn clean install'
+        echo 'Build Complete'
       }
     }
 
-    stage('Test') {
-      post {
-        always {
-          junit 'Calculator/target/surefire-reports/*.xml'
+    stage('Testing') {
+      parallel {
+        stage('Testing') {
+          steps {
+            sh 'mvn sonar:sonar -Dsonar.login=e94a30aab081fc288fa0dbd1e089d6d7c288459e -Dsonar.host.url=http://localhost:9000'
+          }
+        }
+
+        stage('Print build number') {
+          steps {
+            echo "This is build number ${BUILD_ID}"
+            sleep 20
+          }
         }
 
       }
-      steps {
-        sh 'mvn -f Calculator/pom.xml test'
-      }
     }
 
+  }
+  tools {
+    maven 'maven'
+  }
+  environment {
+    TESTER = 'Paul'
+    BUILD_ID = '1'
   }
 }
