@@ -9,19 +9,19 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn -B -DskipTests clean package'
+        sh 'mvn -f Calculator/pom.xml -B -DskipTests clean package'
       }
     }
 
     stage('Test') {
       post {
         always {
-          junit 'target/surefire-reports/*.xml'
+          junit 'Calculator/target/surefire-reports/*.xml'
         }
 
       }
       steps {
-        sh 'mvn test'
+        sh 'mvn -f Calculator/pom.xml test'
       }
     }
 
