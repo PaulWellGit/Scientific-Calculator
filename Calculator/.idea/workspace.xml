@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="498e087b-c69e-4a2c-aa1d-357ada1fc161" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/michaelcane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/michaelcane/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/michaelcane/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/michaelcane/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/michaelcane/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/michaelcane/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/michaelcane/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/michaelcane/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/michaelcane/CalculatorSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/michaelcane/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/Commands$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/Commands$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/Commands$Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/Commands$Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/Commands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/Commands.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/michaelcane/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/michaelcane/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/michaelcane/CalculatorSpec.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +272,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest">
+  <component name="RunManager" selected="JUnit.CalculatorTest.test$cube">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -587,6 +570,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.test$cube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.michaelcane.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.michaelcane" />
+      <option name="MAIN_CLASS_NAME" value="io.michaelcane.CalculatorTest" />
+      <option name="METHOD_NAME" value="test$cube" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest.test$divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -598,23 +598,6 @@
       <option name="PACKAGE_NAME" value="io.michaelcane" />
       <option name="MAIN_CLASS_NAME" value="io.michaelcane.CalculatorTest" />
       <option name="METHOD_NAME" value="test$divide" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.test$inverseLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.michaelcane.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.michaelcane" />
-      <option name="MAIN_CLASS_NAME" value="io.michaelcane.CalculatorTest" />
-      <option name="METHOD_NAME" value="test$inverseLog" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -700,17 +683,17 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.CalculatorTest" />
-      <item itemvalue="JUnit.CalculatorTest.test$inverseLog" />
       <item itemvalue="JUnit.CalculatorTest.test$inverseLogarithm" />
       <item itemvalue="JUnit.CalculatorTest.test$divide" />
+      <item itemvalue="JUnit.CalculatorTest.test$cube" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest.test$cube" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.CalculatorTest.test$divide" />
         <item itemvalue="JUnit.CalculatorTest.test$inverseLogarithm" />
-        <item itemvalue="JUnit.CalculatorTest.test$inverseLog" />
       </list>
     </recent_temporary>
   </component>
