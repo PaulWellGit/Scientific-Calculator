@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Start Build'
-        sh 'mvn clean install'
+        sh 'mvn -f Calculator/pom.xml clean install'
         echo 'Build Complete'
       }
     }
@@ -13,7 +13,7 @@ pipeline {
       parallel {
         stage('Testing') {
           steps {
-            sh 'mvn sonar:sonar -Dsonar.login=e94a30aab081fc288fa0dbd1e089d6d7c288459e -Dsonar.host.url=http://localhost:9000'
+            sh 'mvn -f Calculator/pom.xml sonar:sonar -Dsonar.login=e94a30aab081fc288fa0dbd1e089d6d7c288459e -Dsonar.host.url=http://localhost:9000'
           }
         }
 
